@@ -21,7 +21,8 @@ $('button.js-signup').click(function(event) {
     const jwtToken = event.response;
 
     // Your function to pass JWT token to your server
-    sendAuthCode(jwtToken);
+    console.log(jwtToken);
+    //sendAuthCode(jwtToken);
   });
 
   civicSip.on('user-cancelled', function (event) {
